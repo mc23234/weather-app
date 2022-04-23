@@ -131,7 +131,7 @@ async function weatherUpdate(lat,lon){
 	
 function currentParameters(data,icon){
 	
-		weatherIcon.src = `http://openweathermap.org/img/wn/${icon}@2x.png`;
+		weatherIcon.src = `https://openweathermap.org/img/wn/${icon}@2x.png`;
 		temp.innerHTML = Math.floor(data.current.temp - 273)+" "+"&#176;"+ "C";
 		pop.innerHTML = 'Chances of rain: ' + (data.daily[0].pop*100).toFixed()+'%';
 		
@@ -173,7 +173,7 @@ function dailyData(data,i){
 		let icon = data.daily[i].weather[0].icon;
 		
 		let img = document.createElement('img');
-		img.src = `http://openweathermap.org/img/wn/${icon}@2x.png`;
+		img.src = `https://openweathermap.org/img/wn/${icon}@2x.png`;
 		
 		let temp = Math.floor(data.daily[i].temp.max-273)+"&#176;"+ "C"+'/'+Math.floor(data.daily[i].temp.min-273)+"&#176;"+ "C";
 		
