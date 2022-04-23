@@ -1,1 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>weather app</title>
+    <link rel="icon" href="weather.ico" type="image/icon type">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+	<script src="index.js" defer></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+	  <header>
+		<div>
+			<img src = 'weather.png' class = 'app-logo'>
+			<h1>Weather App</h1>
+		</div>
+		<div>
+			<label for = "city-search"></label>
+			<input type = "search" placeholder = "search city" id = "city-search">
+			<span>
+				<button type="submit"><i class="fa fa-search"></i></button>
+			</span>
+		</div>
+	  </header>
+	  
+	  <main>
+		
+		<div class = "date-time"></div>
+		
+		<div class = "name-country"></div>
+		
+		<div class = "factors">
+			<div class = "primary-factors">
+				<div class = "icon-temp">
+					<div class = "temp"></div>
+					<img class = "weather-icon" src = "#" alt = "weather-icon">
+				</div>
+				
+				<div class = "current-description">
+					<div class = "description"></div>
+					<div class = "feels-like"></div>
+					<div class = "pop"></div>
+				</div>
+			</div>
+			
+			<div class = "error"></div>
+			
+			<div class = "Other-factors">
+				<div class = "wind-speed"></div>
+				<div class = "humidity"></div>
+				<div class = "visibility"></div>
+				<div class = "pressure"></div>
+				<div class = "uv"></div>
+			</div>
+		</div>
+		
+		<div class = "hourly">
+			<div class = "hourly-heading">Hourly forecast (48 hours)</div>
 
+			<div id="curve_chart" style="width:1200px; height: 500px;"></div>
+					
+		</div>
+		<div class = "hourly-menu">
+			<button class = "temp-btn">Temperature</button>
+			<button class = "humidity-btn">Humidity</button>
+			<button class = "precp-btn">Precipitation</button>
+		</div>
+		
+		
+		<div class = "daily">
+			<div>Daily forecast (8 days)</div>
+			<table class = "table"></table>
+		</div>
+		
+	  </main>
+<!--
+	  <img src = "#" class = "giphy">
+-->
+	  <footer>
+		<div class = "copyright">&copy; osSidd 2022 github</div>
+	  </footer>
+	  
+  </body>
+</html>

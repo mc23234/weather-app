@@ -1,1 +1,221 @@
+body{
+	margin:0;
+	font-family:Helvetica,serif;
+	background-image:linear-gradient(45deg,rgba(23,121,53,0.5),rgba(53,211,42,0.23));
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:center;
+	padding:0;
 
+}
+
+@media(max-width:768px){
+	body{
+		width:100vw;
+		overflow-x:hidden;
+	}
+}
+header{
+	position:fixed;
+	top:0;
+	left:0;
+	background:#213125;
+	width:100%;
+	height:7rem;
+	display:flex;
+	align-items:center;
+	justify-content:space-around;
+	z-index:1;
+}
+
+.app-logo{
+	width:4.5rem;
+	display:inline-block;
+	margin-right:1rem;
+	vertical-align:middle;
+}
+
+header h1{
+	color:white;
+	display:inline-block;
+}
+
+header div:last-child{
+	border-bottom:2px solid white;
+}
+
+header input{
+	padding:5px;
+	width:15rem;
+	background:none;
+	border:none;
+	color:white;
+	font-size:1.25rem;
+}
+
+header input::placeholder{
+	color:white;
+	opacity:0.55;
+}
+
+header button{
+	background:none;
+	border:none;
+	color:white;
+	font-size:1.25rem;
+}
+
+header input:focus{
+	outline:none;
+	background:transparent;
+}
+
+main{
+	margin:10rem auto;
+	width:90%;
+	z-index:1;
+	
+}
+
+.name-country{
+	font-size:2rem;
+	font-weight:bold;
+	text-decoration:underline;
+}
+
+.factors{
+	display:flex;
+	width:100%;
+	justify-content:space-between;
+}
+
+.primary-factors{
+	width:50%;
+}
+
+.icon-temp{
+	display:flex;
+	align-items:center;
+	justify-content:space-between;
+	width:50%;
+}
+
+.weather-icon{
+	width:7.5rem;
+	filter:drop-shadow(3px 3px 3px gray);
+}
+
+.temp{
+	font-size:3rem;
+	font-weight:bold;
+}
+
+.description{
+	font-size:3rem;
+	font-weight:bold;
+}
+
+.feels-like{
+	font-size:1.5rem;
+	font-weight:bold;
+}
+
+.pop{
+	font-size:1.5rem;
+	font-weight:bold;	
+}
+
+.error{
+	background:red;
+	position:absolute;
+	left:35%;
+	color:white;
+	font-size:1.25rem;
+	height:fit-content;
+}
+
+.Other-factors{
+	line-height:3rem;
+	width:25%;
+	font-size:1.25rem;
+	font-weight:bold;
+	padding:0 0 0 5rem;
+}
+
+.wind-speed span{
+	font-size:2.5rem;
+	position:absolute;
+	vertical-align:top;
+}
+
+.hourly{
+	overflow:hidden;
+	padding:0;
+	margin:12.5rem auto 2rem auto;
+}
+
+@media(max-width:768px){
+	.hourly{
+		overflow-x:auto;
+	}
+
+}
+
+.hourly-heading{
+	text-align:center;
+	font-size:2rem;
+	font-weight:bold;
+}
+
+.hourly-menu{
+	width:460px;
+	margin:0 auto 5rem auto; 
+	
+}
+
+.hourly-menu button{
+	width:150px;
+	font-size:1.15rem;
+	padding:5px;
+	border-radius:5px;
+	border:none;
+}
+
+.daily{
+	text-align:center;
+	font-size:2rem;
+	margin-top:8rem;
+	font-weight:bold;	
+}
+
+.table{
+	width:75%;
+	margin:5rem auto;
+	font-size:1.25rem;
+}
+
+.table tr img{
+	filter:drop-shadow(2px 2px 2px grey);
+}
+
+.table tr{
+	font-weight:normal;
+}
+
+/*
+.giphy{
+	width:100%;
+	height:85%;
+	position:absolute;
+	top:7rem;
+	left:0;
+	z-index:-1;
+	opacity:0.25;
+}
+*/
+
+footer{
+	text-align:center;
+	font-size:1.125rem;
+	
+}
