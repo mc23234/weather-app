@@ -14,7 +14,7 @@ header{
 	position:fixed;
 	top:0;
 	left:0;
-	width:100vw;
+	width:100%;
 	background:#213125;
 	height:7rem;
 	display:flex;
