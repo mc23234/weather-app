@@ -51,7 +51,7 @@ search.addEventListener('change',() => {
 async function getCoordinates(city){
 		try{
 			error.innerHTML = '';
-		const response = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=f3ff2d887ca8e44b4d677a9bfe02f400`,{mode:'cors'})
+		const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=f3ff2d887ca8e44b4d677a9bfe02f400`,{mode:'cors'})
 		
 		const data = await response.json();
 		
@@ -70,7 +70,7 @@ async function getCoordinates(city){
 	}
 
 async function weatherUpdate(lat,lon){
-		const response = await fetch(`http://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&exclude=minutely&appid=f3ff2d887ca8e44b4d677a9bfe02f400`,{mode:'cors'})
+		const response = await fetch(`https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&exclude=minutely&appid=f3ff2d887ca8e44b4d677a9bfe02f400`,{mode:'cors'})
 		
 		const data = await response.json();
 		const icon = data.current.weather[0].icon;
